@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-primary: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    --color-navy-dark: #081936;
+    --color-navy-card: #0D2248;
+    --color-purple-primary: #4935D4;
+    --color-purple-hover: #3D2ABF;
+    --color-purple-light: #EEECFC;
+    --color-bg-light: #F7F7FF;
+  }
+
+  body {
+    font-family: var(--font-primary);
+    background-color: var(--color-bg-light);
+    color: #081936;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(8, 25, 54, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(8, 25, 54, 0.3);
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(0.98); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}

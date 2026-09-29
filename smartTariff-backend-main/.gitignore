@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables & local secrets
+.env
+.env.local
+.env.*.local
+
+# Large ML Model files (>100MB exceeds GitHub limits)
+*.pkl
+*.joblib
+*.h5
+*.onnx
+
+# SQLite database (optional: keep if needed, but local db file is ignored for production)
+*.db-journal
+*.db-wal
+*.db-shm
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
